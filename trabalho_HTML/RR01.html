@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Carros</title>
+  <link rel="stylesheet" href="RR01.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <h1>Carros Incríveis</h1>
+        <ul>
+          <li><a href="IN00.html">Início</a></li>
+          <li><a href="SO04.HTML">Ajude Nós</a></li>
+          <!-- Ícone de usuário para login com a classe "user-icon" -->
+          <li class="user-icon"><a href="CD01.html"><i class="fa fa-user"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="car-gallery">
+    <div class="car-images">
+      <div class="car">
+        <a href="rr.html"><img src="wraith rolls-royce capa.jpg" alt="Rolls Royce"></a>
+        <p>Rolls Royce Wraith</p>
+
+        <h2>História</h2>
+        <p>O Rolls-Royce Wraith é um carro/grand tourer ultraluxuoso de tamanho real fabricado pela Rolls-Royce Motor Cars e baseado no chassi do sedã Rolls-Royce Ghost, que também é compartilhado com o conversível Rolls-Royce Dawn. O Wraith compartilha sua placa de identificação com o modelo de 1938 da empresa Rolls-Royce original.</p>
+        <p>O estilo da carroceria é um cupê de duas portas sem pilares com portas suicidas, onde todas as janelas laterais podem abrir como em um conversível. Este estilo de carroceria era popular nos carros americanos durante as décadas de 1950 e 1960, e era conhecido como estilo de carroceria com capota rígida, não usado pela Rolls-Royce desde 1955.</p>
+        <img src="wraith rolls-royce.jpg" alt="">
+      </div>
+    </div>
+  </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
+ 

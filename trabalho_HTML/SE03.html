@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Carros</title>
+  <link rel="stylesheet" href="SE03.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <h1>Carros Incríveis</h1>
+        <ul>
+          <li><a href="IN00.html">Início</a></li>
+          <li><a href="SO04.HTML">Sobre Nós</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Esqueci a Senha</h2>
+      <form id="forgot-password-form">
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="new-password">Nova Senha:</label>
+          <input type="password" id="new-password" name="new-password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirmar Nova Senha:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <div class="form-group">
+          <button type="submit">Enviar E-mail de Recuperação</button>
+        </div>
+      </form>
+      <div id="message"></div>
+    </div>
+  </main>
+
+  <script src="SE03.js"></script>
+</body>
+</html>

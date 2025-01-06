@@ -1,0 +1,135 @@
+/* Estilo geral da página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eae8e8;
+  }
+  
+  /* Contêiner principal */
+  .container {
+    width: 87%;
+    margin: 0 auto;
+  }
+  
+  /* Estilo do cabeçalho */
+  header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilo do título no cabeçalho */
+  header h1 {
+    font-size: 2em; /* Tamanho da fonte aumentado */
+  }
+  
+  /* Lista de navegação */
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 20px;
+  }
+  
+  /* Itens da lista de navegação */
+  header nav ul li {
+    display: inline;
+  }
+  
+  /* Links da navegação */
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Estilo do ícone de usuário para criar conta */
+  .create-account {
+    margin-left: auto; /* Move o ícone para a extremidade direita da página */
+  }
+  
+  /* Estilo do ícone de usuário para login */
+  .user-icon a i,
+  .create-account a i {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.86);
+  }
+  
+  /* Estilo da galeria de carros */
+  .car-gallery {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  /* Moldura em volta das imagens dos carros */
+  .car-gallery-wrapper {
+    border: 5px solid #333;
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  /* Contêiner das imagens dos carros */
+  .car-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  /* Estilo individual dos carros */
+  .car {
+    flex: 0 0 45%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo das imagens dos carros */
+  .car img {
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    margin: 2px;
+  }
+  
+  /* Estilo do formulário de busca */
+  .search-form {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo dos inputs e botões do formulário de busca */
+  .search-form input, .search-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilo do campo de texto do formulário de busca */
+  .search-form input {
+    border-radius: 10px 0 0 10px;
+    width: 50%;
+  }
+  
+  /* Estilo do botão de busca */
+  .search-form button {
+    border-radius: 0 10px 10px 0;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Estilo do ícone de usuário para login */
+.user-icon {
+    margin-left: auto; /* Move o ícone para a extremidade direita da página */
+  }
+  
+  /* Estilo do ícone */
+  .user-icon a i {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.86);
+  }

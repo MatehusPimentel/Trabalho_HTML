@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Carros</title>
+  <link rel="stylesheet" href="IN00.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <h1>Carros Incríveis</h1>
+        <ul>
+          <li><a href="IN00.html">Início</a></li>
+          <li><a href="SO04.HTML">Ajude Nós</a></li>
+          <!-- Ícone de usuário para login com a classe "user-icon" -->
+          <li class="user-icon"><a href="CD01.html"><i class="fa fa-user"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="car-gallery">
+    <div class="container">
+      <div class="search-form">
+        <!-- Formulário de busca de carros -->
+        <input id="searchInput" type="text" placeholder="Buscar carros...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+      <div class="car-gallery-wrapper"> <!-- Div para a moldura em volta das imagens dos carros -->
+        <div id="carContainer" class="car-images">
+          <!-- Contêiner das imagens dos carros -->
+          <div class="car">
+            <a href="UR03.HTML"><img src="lambo urus.jpg" alt="Urus"></a>
+            <p>Urus</p>
+          </div>
+          <div class="car">
+            <a href="CV02.HTML"><img src="OIP1.jpg" alt="Civic"></a>
+            <p>Civic</p>
+          </div>
+          <div class="car">
+            <a href="RR01.html"><img src="wraith rolls-royce capa.jpg" alt="Rolls Royce"></a>
+            <p>Rolls Royce</p>
+          </div>
+          <div class="car">
+            <a href="CM00.html"><img src="Camaro-0.2.jpg" alt="Camaro"></a>
+            <p>Camaro</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Função de busca
+    document.getElementById('searchInput').addEventListener('keyup', function() {
+      var filter = this.value.toUpperCase();
+      var cars = document.getElementsByClassName('car');
+
+      // Filtra os carros de acordo com o texto inserido
+      Array.from(cars).forEach(function(car) {
+        var carName = car.textContent || car.innerText;
+        car.style.display = carName.toUpperCase().includes(filter) ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CD01.css">
+    <title>Página | Login</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="criarconta.php" method="POST">
+                <h1>Criar conta</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <span>ou use seu E-mail para cadastro</span>
+                <input type="text" name="nome" placeholder="Nome">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="senha" placeholder="Password">
+                <input type="Submit" name="submit" value="Inscrição">
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="logar.php" method="post">
+                <h1>Entrar</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <span>ou use sua senha de E-mail</span>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="senha" placeholder="Password">
+                <a href="SE03.html">Esqueceu sua senha?</a>
+                <input type="Submit" name="submit" value="Inscrição">
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem-vindo de volta</h1>
+                    <p>insira seus dados para usar todos os nossos recursos</p>
+                    <button class="hidden" id="login">Entrar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h2>Registre-se para ficar por dentro de tudo sobre carros</h2>
+                    <button class="hidden" id="register">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="CD01.js"></script>
+</body>
+
+</html>
